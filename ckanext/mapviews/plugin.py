@@ -1,7 +1,7 @@
 import urllib.parse as urlparse
 
 import ckan.plugins as p
-from  ckan.plugins.toolkit import config
+from ckan.plugins.toolkit import config
 
 Invalid = p.toolkit.Invalid
 _ = p.toolkit._
@@ -32,7 +32,8 @@ class NavigableMap(p.SingletonPlugin):
 
     def update_config(self, config):
         p.toolkit.add_template_directory(config, 'theme/templates')
-        p.toolkit.add_resource('theme/public', 'mapviews')
+        p.toolkit.add_resource('theme/assets', 'mapviews')
+        #p.toolkit.add_resource('theme/public', 'mapviews')
 
     def info(self):
         schema = {
