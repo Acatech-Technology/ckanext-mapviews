@@ -6,9 +6,7 @@ mapviews-js:
       - base/main
   contents:
     - js/vendor/leaflet.js
-    
     - js/vendor/leaflet.label.js
-    
     - js/vendor/d3.scale.quantize.js
     - js/vendor/backend.ckan.js
     - js/vendor/queryStringToJSON.js
@@ -23,7 +21,7 @@ navigablemap-css:
   contents:
     - css/navigablemap.css
     
-navigablemap-css:
+choroplethmap-css:
   output: ckanext-mapviews/%(version)s-choroplethmap.css
   filter: cssrewrite
   contents:
