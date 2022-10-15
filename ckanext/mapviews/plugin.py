@@ -32,6 +32,7 @@ class NavigableMap(p.SingletonPlugin):
 
     def update_config(self, config):
         p.toolkit.add_template_directory(config, 'theme/templates')
+        p.toolkit.add_public_directory(config, 'theme/public')
         p.toolkit.add_resource('theme/assets', 'mapviews')
         #p.toolkit.add_resource('theme/public', 'mapviews')
 
